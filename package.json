@@ -6,7 +6,6 @@
   "dependencies": {
     "ace-css": "1.1",
     "css-loader": "^0.28.7",
-    "dotenv": "^4.0.0",
     "elm-webpack-loader": "^4.4.0",
     "file-loader": "^1.1.6",
     "font-awesome": "4",
@@ -16,6 +15,13 @@
     "url-loader": "^0.6.2",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.9.7"
+  },
+  "devDependencies": {
+    "dotenv": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashellwig/elm-billmanagement.git"
   },
   "scripts": {
     "api": "node api.js",

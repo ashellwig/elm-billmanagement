@@ -1,10 +1,11 @@
 {
     "version": "1.0.0",
-    "summary": "helpful summary of your project, less than 80 characters",
-    "repository": "https://github.com/user/project.git",
+    "summary": "Bill manager SPA written in Elm with Express.js backend",
+    "repository": "https://github.com/ashellwig/elm-billmanagement.git",
     "license": "BSD3",
     "source-directories": [
-        "src/elm"
+        "src/elm",
+        "src/elm/public"
     ],
     "exposed-modules": [],
     "dependencies": {
