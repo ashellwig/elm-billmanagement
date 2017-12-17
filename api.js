@@ -1,6 +1,10 @@
-var jsonServer = require ('json-server')
+// .env Config
+require('dotenv').config()
 
-// Returns the Express.js server
+// Returns the JSON Server
+var jsonServer = require('json-server')
+
+// Returns the Express.js Server
 var server = jsonServer.create()
 
 // Default Middlewares
