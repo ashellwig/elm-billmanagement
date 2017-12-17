@@ -1,10 +1,11 @@
 module Bills.List exposing (..)
 
 import Html exposing (..)
-import Html.Attributes exposing (class)
+import Html.Attributes exposing (class, href)
 import Models exposing (Bill)
 import Msgs exposing (Msg)
 import RemoteData exposing (WebData)
+import Routing exposing (billPath)
 
 
 view : WebData (List Bill) -> Html Msg
@@ -61,5 +62,18 @@ billRow bill =
         , td [] [ text bill.company ]
         , td [] [ text (toString bill.amount) ]
         , td []
-            []
+            [ editBtn bill ]
         ]
+
+
+editBtn : Bill -> Html.Html Msg
+editBtn bill =
+    let
+        path =
+            billPath bill.category
+    in
+    a
+        [ class "btn regular"
+        , href path
+        ]
+        [ i [ class "fa fa-pencil mr1" ] [], text "Edit" ]

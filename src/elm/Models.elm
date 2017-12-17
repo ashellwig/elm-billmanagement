@@ -5,12 +5,14 @@ import RemoteData exposing (WebData)
 
 type alias Model =
     { bills : WebData (List Bill)
+    , route : Route
     }
 
 
-initalModel : Model
-initalModel =
+initalModel : Route -> Model
+initalModel route =
     { bills = RemoteData.Loading
+    , route = route
     }
 
 
@@ -23,3 +25,9 @@ type alias Bill =
     , company : String
     , amount : Int
     }
+
+
+type Route
+    = BillsRoute
+    | BillRoute BillCategory
+    | NotFoundRoute
