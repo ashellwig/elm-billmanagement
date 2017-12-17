@@ -6,9 +6,9 @@ Bill management SPA following elm-tutorial
 ## Run
 
 ### Dependencies
-  1. [Elm]()
-  2. [yarn]()
-  3. [Node.js + npm]()
+  1. [elm-lang](http://elm-lang.org/)
+  2. [yarn](https://yarnpkg.com/en/)
+  3. [Node.js + npm](https://nodejs.org/en/download/current/)
 
 ### Developement
 
