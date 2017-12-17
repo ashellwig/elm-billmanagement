@@ -3,7 +3,7 @@ var path = require("path");
 module.exports = {
     entry: {
         app: [
-            './src/index.js'
+            './src/public/index.js'
         ]
     },
 
@@ -22,14 +22,14 @@ module.exports = {
                 ]
             },
             {
-                test:    /\.html$/,
+                test: /\.html$/,
                 exclude: /node_modules/,
-                loader:  'file-loader?name=[name].[ext]',
+                loader: 'file-loader?name=[name].[ext]',
             },
             {
-                test:    /\.elm$/,
+                test: /\.elm$/,
                 exclude: [/elm-stuff/, /node_modules/],
-                loader:  'elm-webpack-loader?verbose=true&warn=true',
+                loader: 'elm-webpack-loader?verbose=true&warn=true',
             },
             {
                 test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
