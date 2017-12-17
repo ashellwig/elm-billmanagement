@@ -1,0 +1,4 @@
+./node_modules/*
+.idea/
+elm-stuff/*
+C:\Users\hellw\Documents\Code\elm-billmanagement\elm-stuff\build-artifacts

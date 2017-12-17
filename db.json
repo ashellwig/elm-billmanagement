@@ -1,6 +1,14 @@
 {
   "bills": [
-    { "Category": "internet", "company": "Century Link", "amount": 95 },
-    { "Category": "utilities", "company": "Excel Energy", "amount": 43 }
+    {
+      "category": "internet",
+      "company": "Century Link",
+      "amount": 95
+    },
+    {
+      "category": "utilities",
+      "company": "Excel Energy",
+      "amount": 43
+    }
   ]
 }
