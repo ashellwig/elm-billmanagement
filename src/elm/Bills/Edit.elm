@@ -2,6 +2,7 @@ module Bills.Edit exposing (..)
 
 import Html exposing (..)
 import Html.Attributes exposing (class, href, value)
+import Html.Events exposing (onClick)
 import Models exposing (Bill)
 import Msgs exposing (Msg)
 import Routing exposing (billsPath)
@@ -45,13 +46,21 @@ formAmount bill =
 
 btnAmountDecrease : Bill -> Html Msg
 btnAmountDecrease bill =
-    a [ class "btn ml1 h1" ]
+    let
+        message =
+            Msgs.ChangeAmount bill -1
+    in
+    a [ class "btn ml1 h1", onClick message ]
         [ i [ class "fa fa-minus-circle" ] [] ]
 
 
 btnAmountIncrease : Bill -> Html Msg
 btnAmountIncrease bill =
-    a [ class "btn ml1 h1" ]
+    let
+        message =
+            Msgs.ChangeAmount bill 1
+    in
+    a [ class "btn ml1 h1", onClick message ]
         [ i [ class "fa fa-plus-circle" ] [] ]
 
 
