@@ -13,8 +13,7 @@ module.exports = {
     },
 
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.(css|scss)$/,
                 use: [
                     'style-loader',
@@ -46,7 +45,9 @@ module.exports = {
 
     devServer: {
         inline: true,
-        stats: { colors: true },
+        stats: {
+            colors: true
+        },
     },
 
 
