@@ -1,6 +1,6 @@
-languge: node_js
+language: node_js
 before_script:
-  - yarn global add elm elm-test
+  - yarn global add elm 
   - yarn
 script:
-  - elm-test
+  - build
