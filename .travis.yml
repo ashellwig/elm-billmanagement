@@ -3,4 +3,7 @@ before_script:
   - yarn global add elm 
   - yarn
 script:
-  - build
+  - yarn run build
+skip_cleanup: true
+
+# vim: set ft=yaml:
