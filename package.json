@@ -17,7 +17,8 @@
     "webpack-dev-server": "^2.9.7"
   },
   "devDependencies": {
-    "dotenv": "^4.0.0"
+    "dotenv": "^4.0.0",
+    "elm-test": "^0.18.12"
   },
   "repository": {
     "type": "git",

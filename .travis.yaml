@@ -1,0 +1,6 @@
+languge: node_js
+before_script:
+  - yarn global add elm elm-test
+  - yarn
+script:
+  - elm-test
